@@ -94,7 +94,7 @@ nav #nav-links a:hover {
 }
 
 nav #nav-links a.active {
-    text-decoration: underline;
+    font-weight: 600;
 }
 
 .book-now-light {

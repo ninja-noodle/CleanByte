@@ -1,0 +1,233 @@
+#about {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    row-gap: 30px;
+    padding: 50px 100px;
+}
+
+#header-about {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #2c506b;
+}
+
+#body-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 80px;
+}
+
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.underlay-text {
+    font-family: var(--font-primary);
+    font-size: 8.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1.7rem;
+    color: #2c506b;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 7.000000000000001%, rgba(255, 255, 255, 0.6951219512195121) 36%, rgba(255, 255, 255, 1) 80%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-primary);
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #2c506b;
+    z-index: 3;
+    min-width: 90%;
+    white-space: normal;
+    text-align: center;
+}
+
+@media (max-width: 1335px) {
+    #about {
+        padding: 50px;
+    }
+
+    .underlay-text {
+        font-size: 7.5rem;
+    }
+
+    .overlay-text {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1160px) {
+    #about {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 1160px) {
+    #about {
+        padding: 50px 0px;
+    }
+
+    .underlay-text {
+        font-size: 7rem;
+    }
+
+    .overlay-text {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1013px) {
+    .underlay-text {
+        font-size: 5.5rem;
+    }
+
+    .overlay-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    #header-about {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .underlay-text {
+        letter-spacing: 1.2rem;
+    }
+}
+
+@media (max-width: 824px) {
+    #header-about {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .underlay-text {
+        letter-spacing: 1rem;
+        font-size: 5rem;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 690px) {
+    .underlay-text {
+        letter-spacing: 1rem;
+        font-size: 4.5rem;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .underlay-text {
+        letter-spacing: 1rem;
+        font-size: 4rem;
+    }
+
+    .overlay-text {
+        font-size: 0.9rem;
+        bottom: -30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .underlay-text {
+        letter-spacing: 1rem;
+        font-size: 3.5rem;
+    }
+
+    .overlay-text {
+        font-size: 0.9rem;
+    }
+
+    #mission-wrapper .overlay-text {
+        bottom: -60%;
+    }
+}
+
+@media (max-width: 540px) {
+    .underlay-text {
+        letter-spacing: 0.8rem;
+        font-size: 3.5rem;
+    }
+
+    .overlay-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 512px) {
+    .underlay-text {
+        letter-spacing: 0.7rem;
+        font-size: 3.2rem;
+    }
+
+    .overlay-text {
+        font-size: 0.9rem;
+    }
+
+    #mission-wrapper .overlay-text {
+        bottom: -70%;
+    }
+}
+
+@media (max-width: 458px) {
+    .underlay-text {
+        letter-spacing: 0.5rem;
+        font-size: 2.8rem;
+    }
+
+    .overlay-text {
+        font-size: 0.9rem;
+    }
+
+    #vision-wrapper .overlay-text {
+        bottom: -80%;
+    }
+
+    #mission-wrapper .overlay-text {
+        bottom: -80%;
+    }
+}
