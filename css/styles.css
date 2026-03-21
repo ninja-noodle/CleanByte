@@ -46,7 +46,7 @@ nav {
     justify-content: space-evenly;
     padding: 10px 20px;
     background: #2c506b;
-    z-index: 2;
+    z-index: 3;
 }
 
 nav #business-name {

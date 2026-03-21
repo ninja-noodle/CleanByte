@@ -231,3 +231,23 @@
         bottom: -80%;
     }
 }
+
+@media (max-width: 386px) {
+    .underlay-text {
+        letter-spacing: 0.2rem;
+        font-size: 2.8rem;
+    }
+
+    .overlay-text {
+        font-size: 0.9rem;
+    }
+
+    #vision-wrapper .overlay-text {
+        bottom: -90%;
+
+    }
+
+    #mission-wrapper .overlay-text {
+        bottom: -90%;
+    }
+}
