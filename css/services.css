@@ -11,6 +11,15 @@
     row-gap: 80px;
 }
 
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+
 #services #pricing {
     width: 100%;
     height: auto;
@@ -43,7 +52,7 @@
     row-gap: 5px;
 }
 
-#services #pricing #plans #plans-text {
+#services .sub-text {
     height: 30px;
     font-family: var(--font-secondary);
     font-size: 1rem;
@@ -445,7 +454,7 @@ li {
         font-size: 1.3rem;
     }
 
-    #services #pricing #plans #plans-text {
+    #services .sub-text {
         font-size: 0.8rem;
     }
 
@@ -483,5 +492,185 @@ li {
 
     .learnmore {
         font-size: 1rem;
+    }
+}
+
+
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+/* ===============++++++    DETAILS     +++++++=======================++++++++++++++++++ */
+/* ===============+++++++++++++++++++++++++++++=======================++++++++++++++++++ */
+
+#details {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    row-gap: 10px;
+    padding: 20px;
+}
+
+#details #dropdowns {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+#details #dropdowns .dropdown {
+    width: 100%;
+    border-radius: 25px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.hitbox {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: #2c506b;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    margin: 10px;
+}
+
+.hitbox label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hitbox span {
+    display: block;
+    background: transparent;
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.hitbox::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.hitbox p {
+    font-family: var(--font-secondary);
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+#dropdowns .dropdown .slide {
+    clear: both;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    text-align: start;
+    transition: max-height .4s ease;
+    background: #dde9f3;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-content: stretch;
+    justify-content: start;
+    row-gap: 10px;
+}
+
+.inner-slide {
+    width: 100%;
+    height: fit-content;
+    margin: 20px;
+    color: #2c506b;
+}
+
+.inner-slide span {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+
+.inner-slide ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.5;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+#touch1 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch1:checked~.slide {
+    max-height: 500px;
+}
+
+#touch2 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch2:checked~.slide {
+    max-height: 500px;
+}
+
+#touch3 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch3:checked~.slide {
+    max-height: 500px;
+}
+
+.hitbox:hover {
+    background: #dde9f3;
+}
+
+
+@media (max-width: 1100px) {
+    .hitbox span {
+        font-size: 1.8rem;
+    }
+
+    .hitbox p {
+        font-size: 0.9rem;
     }
 }

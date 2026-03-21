@@ -83,6 +83,20 @@ nav #nav-links {
     color: #fff;
 }
 
+nav #nav-links a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav #nav-links a:hover {
+    text-decoration: underline;
+}
+
+nav #nav-links a.active {
+    text-decoration: underline;
+}
+
 .book-now-light {
     height: 2.5rem;
     width: 10rem;
