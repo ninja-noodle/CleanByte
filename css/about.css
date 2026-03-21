@@ -243,11 +243,11 @@
     }
 
     #vision-wrapper .overlay-text {
-        bottom: -90%;
+        bottom: -85%;
 
     }
 
     #mission-wrapper .overlay-text {
-        bottom: -90%;
+        bottom: -125%;
     }
 }
