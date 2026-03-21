@@ -1,0 +1,487 @@
+#services {
+    height: auto;
+    border-radius: 30px;
+    background: #6da1c93B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    align-content: stretch;
+    padding: 50px 100px;
+    row-gap: 80px;
+}
+
+#services #pricing {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    row-gap: 30px;
+}
+
+#services #pricing .title {
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    color: #2c506bFF;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+#services #pricing #plans {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    row-gap: 5px;
+}
+
+#services #pricing #plans #plans-text {
+    height: 30px;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #2c506bFF;
+}
+
+#cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    align-items: start;
+    align-content: stretch;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    row-gap: 20px;
+    padding: 30px;
+    scroll-snap-align: center;
+}
+
+/* =--==--==--==--==--==--==--HEADER--==--==--==--==--==--==--= */
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+}
+
+.header-1 {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.header-2 {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+
+/* =--==--==--==--==--==--==--SUB-HEADER--==--==--==--==--==--==--= */
+.subheader {
+    width: 100%;
+    height: 2.25rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+    background: #ffffff80;
+}
+
+.subheader span {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+/* =--==--==--==--==--==--==--BODY--==--==--==--==--==--==--= */
+.body {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    padding: 10px 0;
+    row-gap: 10px;
+    background: #ffffff80;
+}
+
+.body span {
+    font-family: var(--font-secondary);
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.body ul {
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-decoration: none;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    min-width: 270px;
+}
+
+
+/* =--==--==--==--==--==--==--FOOTER--==--==--==--==--==--==--= */
+.footer {
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+    padding: 20px 0;
+    flex: 1 0 0;
+    background: #ffffff80;
+}
+
+.footer span {
+    font-family: var(--font-primary);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+/* =--==--==--==--==--==--==--CARD-BOOK-NOW--==--==--==--==--==--==--= */
+.card-book-now {
+    height: 2.5rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    /* /////////////////////CHANGE THIS FOR BOOK NOW */
+    color: #fff;
+    background-color: transparent;
+    /* /////////////////////CHANGE THIS FOR BOOK NOW */
+    border: 2px solid #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.card-book-now::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    /* /////////////////////CHANGE THIS FOR BOOK NOW */
+    background-color: #ffffff80;
+    z-index: 0;
+    transition: transform 0.5s ease;
+    transform: translateX(0);
+}
+
+.card-book-now:hover::before {
+    transform: translateX(100%);
+}
+
+.card-book-now span {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-decoration: none;
+    padding: 0rem 2rem;
+    cursor: pointer;
+    align-items: center;
+    color: #fff;
+    transition: color 0.5s ease;
+}
+
+/* /////////////////////CHANGE THIS FOR BOOK NOW */
+.card-book-now:hover span {
+    color: #fff;
+}
+
+/* =--==--==--==--==--==--==--LEARN-MORE--==--==--==--==--==--==--= */
+.learnmore {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.learnmore:hover {
+    text-decoration: underline;
+}
+
+/* =--==--==--==--==--==--==--=--==--==--==--==--==--==--=--==--==--==--==--==--==-- */
+/* =--==--==--==--==--==--==--CARD 1--==--==--==--==--==--==--= */
+#card1 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 11%, rgba(184, 209, 228, 1) 59%);
+    color: #78a8cc;
+}
+
+#card1 .subheader span {
+    font-family: var(--font-secondary);
+}
+
+#card1 .card-book-now:hover span {
+    color: #78a8cc;
+}
+
+
+/* =--==--==--==--==--==--==--CARD 2--==--==--==--==--==--==--= */
+#card2 {
+    background-image: linear-gradient(to bottom, rgba(222, 233, 243, 1) 20%, rgba(120, 168, 204, 1) 96%);
+    color: #355872FF;
+    border: 2px solid #ffffffFF;
+}
+
+#card2 .subheader span {
+    font-family: var(--font-primary);
+}
+
+#card2 .card-book-now:hover span {
+    color: #355872FF;
+}
+
+
+/* =--==--==--==--==--==--==--CARD 2--==--==--==--==--==--==--= */
+#card3 {
+    background: linear-gradient(to bottom, rgba(31, 82, 120, 1) 0%, rgba(127, 180, 224, 1) 80%);
+    color: #355872FF;
+}
+
+#card3 .header {
+    color: #fff;
+}
+
+#card3 .subheader {
+    background-color: #ffffffBF;
+}
+
+#card3 .body {
+    background-color: #ffffffBF;
+}
+
+#card3 .footer {
+    background-color: #ffffffBF;
+}
+
+#card3 .subheader span {
+    font-family: var(--font-primary);
+}
+
+#card3 .card-book-now:hover span {
+    color: #355872FF;
+}
+
+
+
+/* =--==--==--==--==--==--==--=--==--==--==--==--==--==--=--==--==--==--==--==--==-- */
+@media (max-width: 1400px) {
+    #services {
+        padding: 50px 60px;
+    }
+
+    .card {
+        row-gap: 10px;
+    }
+
+    .header-1 {
+        font-size: 2.2rem;
+    }
+
+    .header-2 {
+        font-size: 0.8rem;
+    }
+
+    .subheader {
+        font-size: 2rem;
+    }
+
+    .subheader span {
+        font-size: 1rem;
+    }
+
+    .body span {
+        font-size: 0.6rem;
+    }
+
+    .body ul {
+        font-size: 0.9rem;
+    }
+
+    .footer span {
+        font-size: 1.2rem;
+    }
+
+    .card-book-now span {
+        font-size: 1rem;
+    }
+
+    .learnmore {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 1190px) {
+    #services {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #services #pricing .title {
+        font-size: 1.6rem;
+    }
+
+    #cards {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .header-1 {
+        font-size: 2.1rem;
+    }
+
+    .card {
+        padding: 20px;
+        row-gap: 8px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #services {
+        padding: 50px 10px;
+    }
+
+    .subheader {
+        font-size: 2rem;
+    }
+
+    .subheader span {
+        font-size: 1rem;
+    }
+
+    .body span {
+        font-size: 0.6rem;
+    }
+
+    .body ul {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 824px) {
+    #services #pricing .title {
+        font-size: 1.3rem;
+    }
+
+    #services #pricing #plans #plans-text {
+        font-size: 0.8rem;
+    }
+
+    .header-1 {
+        font-size: 2rem;
+    }
+
+    .header-2 {
+        font-size: 0.8rem;
+    }
+
+    .subheader {
+        font-size: 1.8rem;
+    }
+
+    .subheader span {
+        font-size: 1rem;
+    }
+
+    .body span {
+        font-size: 0.6rem;
+    }
+
+    .body ul {
+        font-size: 0.75rem;
+    }
+
+    .footer span {
+        font-size: 1rem;
+    }
+
+    .card-book-now span {
+        font-size: 1rem;
+    }
+
+    .learnmore {
+        font-size: 1rem;
+    }
+}
