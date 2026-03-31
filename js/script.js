@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll("#nav-links a");
 const navbar = document.querySelector("nav"); // your navbar
 
 navLinks.forEach(link => {
@@ -47,7 +47,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.6
+    threshold: 0.7
 });
 
 sections.forEach(section => {

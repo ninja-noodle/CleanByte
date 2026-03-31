@@ -1,0 +1,476 @@
+#contact {
+    height: auto;
+    border-radius: 30px;
+    background: #dde9f3FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    row-gap: 30px;
+    padding: 50px 100px;
+    margin-top: 30px;
+}
+
+#header-contact {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #2c506b;
+}
+
+#body-contact {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+
+.contact-us-sections {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-content: stretch;
+    justify-content: space-around;
+    row-gap: 10px;
+    background: #fff;
+    padding: 30px;
+}
+
+.contact-us-sections span {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #2c506b;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=- CONTACT INFO =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+#contact-info {
+    border-radius: 25px 10px 0px 10px;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#contact-info-sections {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-info-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.contact-info-section span:nth-of-type(1) {
+    font-family: var(--font-secondary);
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    color: #2c506b;
+}
+
+.contact-info-section span:nth-of-type(2) {
+    font-family: var(--font-primary);
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    color: #2c506b;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=-=-= SOCIAL -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+#social {
+    border-radius: 10px 0px 10px 25px;
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#social-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #dde9f3FF;
+    border-radius: 10px;
+}
+
+#social-section span {
+    padding: 10px 0 0 10px;
+    font-family: var(--font-secondary);
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    color: #2c506b;
+}
+
+#social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+#social-links a {
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #2c506b;
+}
+
+#social-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=-=-=-= WORKING HOURS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+#working-hours {
+    border-radius: 10px 25px 10px 0px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#working-hours span:nth-of-type(1) {
+    font-family: var(--font-secondary);
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    color: #2c506b;
+}
+
+#working-hours #timetable {
+    display: flex;
+    flex-direction: column;
+}
+
+#working-hours #timetable span {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #2c506b;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=-=-=-= LOCATION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+#location {
+    border-radius: 0px 10px 25px 10px;
+    grid-area: 2 / 2 / 4 / 3;
+}
+
+#address {
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    background: #dde9f3FF;
+}
+
+#address span {
+    font-family: var(--font-secondary);
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    color: #2c506b;
+    padding: 10px 10px 0 10px;
+}
+
+#address p {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #2c506b;
+    padding: 0 10px 10px 10px;
+    margin: 0;
+}
+
+#location #address-link {
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    color: #2c506b;
+    margin: 0;
+    padding: 0;
+}
+
+#location #address-link:hover {
+    text-decoration: underline;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=-= MEDIA QUERIES-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+@media (max-width: 1250px) {
+    #contact {
+        padding: 50px 75px;
+    }
+
+    #contact-info {
+        border-radius: 20px 5px 5px 5px;
+    }
+
+    #social {
+        border-radius: 5px 5px 5px 20px;
+    }
+
+    #working-hours {
+        border-radius: 5px 20px 5px 5px;
+    }
+
+    #location {
+        border-radius: 5px 5px 20px 5px;
+    }
+
+    .contact-us-sections {
+        padding: 15px;
+    }
+
+    /* .........CONTACT INFO.................................................... */
+    .contact-info-section span:nth-of-type(1) {
+        font-size: 1rem;
+    }
+
+    .contact-info-section span:nth-of-type(2) {
+        font-size: 1.5rem;
+    }
+
+    /* .........SOCIAL.................................................... */
+    #social-section span {
+        font-size: 1rem;
+    }
+
+    #social-links a {
+        font-size: 1.25rem;
+    }
+
+    /* .........WORKING HOURS.................................................... */
+    #working-hours span:nth-of-type(1) {
+        font-size: 1rem;
+    }
+
+    #working-hours #timetable span {
+        font-size: 1.25rem;
+    }
+
+    /* .........LOCATION.................................................... */
+    #address span {
+        font-size: 1rem;
+    }
+
+    #address p {
+        font-size: 1.25rem;
+    }
+
+    #location #address-link {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    #header-contact {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 1090px) {
+    .contact-info-section {
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    #contact {
+        padding: 50px 30px;
+    }
+
+    #contact-info {
+        border-radius: 15px 5px 5px 5px;
+    }
+
+    #social {
+        border-radius: 5px 5px 5px 15px;
+    }
+
+    #working-hours {
+        border-radius: 5px 15px 5px 5px;
+    }
+
+    #location {
+        border-radius: 5px 5px 15px 5px;
+    }
+}
+
+@media (max-width: 352px) {
+    #body-contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr repeat(2, 1fr) 2fr;
+    }
+
+    #contact-info {
+        grid-area: 1 / 1 / 1 / 1;
+        border-radius: 25px 25px 10px 10px;
+    }
+
+    #social {
+        grid-area: 2 / 1 / 2 / 1;
+        border-radius: 10px;
+    }
+
+    #working-hours {
+        grid-area: 3 / 1 / 3 / 1;
+        border-radius: 10px;
+    }
+
+    #location {
+        grid-area: 4 / 1 / 4 / 1;
+        border-radius: 10px 10px 25px 25px;
+    }
+}
+
+@media (max-width: 824px) {
+    #header-contact {
+        font-size: 1.3rem;
+    }
+
+    .contact-us-sections {
+        padding: 10px;
+    }
+
+    .contact-us-sections span {
+        font-size: 0.8rem;
+    }
+
+    /* .........CONTACT INFO.................................................... */
+    .contact-info-section span:nth-of-type(1) {
+        font-size: 0.8rem;
+    }
+
+    .contact-info-section span:nth-of-type(2) {
+        font-size: 1.25rem;
+    }
+
+    /* .........SOCIAL.................................................... */
+    #social-section span {
+        font-size: 0.8rem;
+    }
+
+    #social-links a {
+        font-size: 1rem;
+    }
+
+    /* .........WORKING HOURS.................................................... */
+    #working-hours span:nth-of-type(1) {
+        font-size: 0.8rem;
+    }
+
+    #working-hours #timetable span {
+        font-size: 1rem;
+    }
+
+    /* .........LOCATION.................................................... */
+    #address span {
+        font-size: 0.8rem;
+    }
+
+    #address p {
+        font-size: 1rem;
+    }
+
+    #location #address-link {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 786px) {
+    #contact {
+        padding: 50px 15px;
+    }
+}
+
+@media (max-width: 660px) {
+
+    /* .........CONTACT INFO.................................................... */
+    .contact-info-section span:nth-of-type(1) {
+        font-size: 0.7rem;
+    }
+
+    .contact-info-section span:nth-of-type(2) {
+        font-size: 1.1rem;
+    }
+
+    /* .........SOCIAL.................................................... */
+    #social-section span {
+        font-size: 0.7rem;
+    }
+
+    #social-links a {
+        font-size: 0.9rem;
+    }
+
+    /* .........WORKING HOURS.................................................... */
+    #working-hours span:nth-of-type(1) {
+        font-size: 0.7rem;
+    }
+
+    #working-hours #timetable span {
+        font-size: 0.9rem;
+    }
+
+    /* .........LOCATION.................................................... */
+    #address span {
+        font-size: 0.7rem;
+    }
+
+    #address p {
+        font-size: 0.9rem;
+    }
+
+    #location #address-link {
+        font-size: 0.7rem;
+    }
+}
