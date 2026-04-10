@@ -1,5 +1,5 @@
 const navLinks = document.querySelectorAll("#nav-links a");
-const navbar = document.querySelector("nav"); // your navbar
+const navbar = document.querySelector("nav")
 
 navLinks.forEach(link => {
     link.addEventListener("click", function (e) {
@@ -15,7 +15,7 @@ navLinks.forEach(link => {
             return;
         }
 
-        // normal section scroll
+        // normal section scroll //
         const targetId = targetHref.substring(1);
         const targetEl = document.getElementById(targetId);
 
@@ -47,7 +47,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.7
+    threshold: 0.5
 });
 
 sections.forEach(section => {
