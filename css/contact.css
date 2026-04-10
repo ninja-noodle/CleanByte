@@ -474,3 +474,78 @@
         font-size: 0.7rem;
     }
 }
+
+@media (max-width: 606px) {
+    #body-contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr repeat(2, 0.5fr) 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 5px;
+    }
+
+    #contact-info {
+        grid-area: 1 / 1 / 2 / 2;
+        border-radius: 10px 10px 5px 5px;
+    }
+
+    #social {
+        grid-area: 2 / 1 / 3 / 2;
+        border-radius: 5px;
+
+    }
+
+    #working-hours {
+        grid-area: 3 / 1 / 4 / 2;
+        border-radius: 5px;
+        justify-content: start;
+        height: fit-content;
+    }
+
+    #location {
+        grid-area: 4 / 1 / 5 / 2;
+        border-radius: 5px 5px 10px 10px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    /* .........CONTACT INFO.................................................... */
+    .contact-info-section span:nth-of-type(1) {
+        font-size: 0.6rem;
+    }
+
+    .contact-info-section span:nth-of-type(2) {
+        font-size: 1rem;
+    }
+
+    /* .........SOCIAL.................................................... */
+    #social-section span {
+        font-size: 0.6rem;
+    }
+
+    #social-links a {
+        font-size: 0.8rem;
+    }
+
+    /* .........WORKING HOURS.................................................... */
+    #working-hours span:nth-of-type(1) {
+        font-size: 0.6rem;
+    }
+
+    #working-hours #timetable span {
+        font-size: 0.8rem;
+    }
+
+    /* .........LOCATION.................................................... */
+    #address span {
+        font-size: 0.6rem;
+    }
+
+    #address p {
+        font-size: 0.8rem;
+    }
+
+    #location #address-link {
+        font-size: 0.6rem;
+    }
+}
