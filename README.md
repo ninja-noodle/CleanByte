@@ -20,7 +20,7 @@ CleanByte is a professional laptop maintenance and cleaning service founded by a
 * `/src`: Assets and additional page resources.
 * `index.html`: The structural backbone of this whole page
 
-### 🛠️ Installation & Usage
+## 🛠️ Installation & Usage
 
 1.  **Clone the repository:**
     ```bash
@@ -29,7 +29,7 @@ CleanByte is a professional laptop maintenance and cleaning service founded by a
 2.  **Open the project:**
     Simply open `index.html` in your preferred browser.
 
-### 📜 License
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
