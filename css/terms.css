@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    color: #fff;
+    background: transparent;
+    padding: 3rem;
+}
+
+a {
+    font-family: var(--font-secondary);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main section h2 {
+    font-family: var(--font-primary);
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+main section p {
+    font-family: var(--font-secondary);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-top: 10px;
+}
