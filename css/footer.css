@@ -20,7 +20,7 @@ footer {
 
 #footer-content a {
     color: #fff;
-    cursor: default;
+    cursor: pointer;
 }
 
 #footer-content a svg:hover {
