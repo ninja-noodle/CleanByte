@@ -103,6 +103,11 @@
     color: #2c506b;
 }
 
+#whatsapp svg {
+    width: 25px;
+    height: 25px;
+}
+
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* =-=-=-=-=-= SOCIAL -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -281,6 +286,11 @@
         font-size: 1.5rem;
     }
 
+    #whatsapp svg {
+        width: 20px;
+        height: 20px;
+    }
+
     /* .........SOCIAL.................................................... */
     #social-section span {
         font-size: 1rem;
@@ -355,6 +365,11 @@
         grid-template-rows: 2fr repeat(2, 1fr) 2fr;
     }
 
+    #whatsapp svg {
+        width: 20px;
+        height: 20px;
+    }
+
     #contact-info {
         grid-area: 1 / 1 / 1 / 1;
         border-radius: 25px 25px 10px 10px;
@@ -427,6 +442,11 @@
 
     #location #address-link {
         font-size: 0.7rem;
+    }
+
+    #whatsapp svg {
+        width: 15px;
+        height: 15px;
     }
 }
 
