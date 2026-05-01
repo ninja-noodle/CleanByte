@@ -56,6 +56,27 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
+
+// Dropdown auto collapse and contract
+const checkboxes = [
+    document.getElementById('touch1'),
+    document.getElementById('touch2'),
+    document.getElementById('touch3')
+];
+
+checkboxes.forEach(currentCheckbox => {
+    currentCheckbox.addEventListener('change', () => {
+        if (currentCheckbox.checked) {
+            checkboxes.forEach(otherCheckbox => {
+                if (otherCheckbox !== currentCheckbox) {
+                    otherCheckbox.checked = false;
+                }
+            });
+
+        }
+    });
+});
+
 // Learn more to dropdown scroll
 const card1LearnMore = document.getElementById('card1-learnmore');
 const card2LearnMore = document.getElementById('card2-learnmore');
@@ -70,43 +91,35 @@ const dropdown2Checkbox = document.getElementById('touch2');
 const dropdown3Container = document.getElementById('dropdown3');
 const dropdown3Checkbox = document.getElementById('touch3');
 
-card1LearnMore.addEventListener('click', () => {
-    dropdown1Container.scrollIntoView({
+const allCheckboxes = [
+    dropdown1Checkbox,
+    dropdown2Checkbox,
+    dropdown3Checkbox
+];
+
+function openDropdown(container, checkbox) {
+    allCheckboxes.forEach(cb => {
+        cb.checked = false;
+    });
+    container.scrollIntoView({
         behavior: 'smooth',
         block: 'center'
     });
-
     setTimeout(() => {
-        if (!dropdown1Checkbox.checked) {
-            dropdown1Checkbox.checked = true;
-        }
+        checkbox.checked = true;
     }, 500);
+}
+
+card1LearnMore.addEventListener('click', () => {
+    openDropdown(dropdown1Container, dropdown1Checkbox);
 });
 
 card2LearnMore.addEventListener('click', () => {
-    dropdown2Container.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center'
-    });
-
-    setTimeout(() => {
-        if (!dropdown2Checkbox.checked) {
-            dropdown2Checkbox.checked = true;
-        }
-    }, 500);
+    openDropdown(dropdown2Container, dropdown2Checkbox);
 });
 
 card3LearnMore.addEventListener('click', () => {
-    dropdown3Container.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center'
-    });
-
-    setTimeout(() => {
-        if (!dropdown3Checkbox.checked) {
-            dropdown3Checkbox.checked = true;
-        }
-    }, 500);
+    openDropdown(dropdown3Container, dropdown3Checkbox);
 });
 
 // copyright year auto-changer
