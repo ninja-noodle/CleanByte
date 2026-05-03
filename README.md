@@ -18,7 +18,8 @@ CleanByte is a professional laptop maintenance and cleaning service founded by a
 * `/css`: Contains modular stylesheets for different sections.
 * `/js`: Logic for smooth scrolling, dropdown interactions, and utility scripts.
 * `/src`: Assets and additional page resources.
-* `index.html`: The structural backbone of this whole page
+* `index.html`: The structural backbone of this whole page.
+* `terms.html`: a dedicated page just for our business's terms and conditions.
 
 ## 🛠️ Installation & Usage
 
@@ -34,4 +35,4 @@ CleanByte is a professional laptop maintenance and cleaning service founded by a
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-*Developed with❤️ by [ninja-noodle](https://github.com/ninja-noodle)*
+*Developed during sleepless nights by [ninja-noodle](https://github.com/ninja-noodle)*
