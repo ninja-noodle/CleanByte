@@ -573,3 +573,35 @@
         font-size: 0.6rem;
     }
 }
+
+
+.static-label-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#static-label {
+    display: inline-block;
+    background-color: #2c506b;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    white-space: nowrap;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#static-label::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2c506b transparent transparent transparent;
+}
